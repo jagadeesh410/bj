@@ -1,0 +1,13 @@
+   
+   <div >
+        <form novalidate [ngFormModel]="myform">
+            Name:<input ngControl="name" placeholder="Enter Name"/><br/>
+            Email:<input ngControl="email" placeholder="Enter Email"/><br/>
+            UserName:<input ngControl="username" placeholder="Enter Username"/><br/>
+            PassWord:<input ngControl="password" placeholder="Create PassWord"/><br/><br/>
+            <button>Submit</button>
+        
+        </form>
+        <p>Form Value:{{myform.value|json}}</p>
+        
+    </div>
